@@ -6,14 +6,45 @@
     <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
     <link rel="stylesheet" href="dist/styles/main.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
   </head>
   <body>
+
+
+    <script type="text/template" id="sidebarImageSection">  
+      <a href="<%= html_url %>"><img src="<%= avatar_url %>"></a>
+      
+      <div class="usernameTextArea">
+        <span class ="Name"><%= name %></span>
+        <span class ="loginName"><%= login %></span>
+      </div><!-- .usernameTextArea -->
+
+      <div class="contactInfo">
+        <ul>
+          <li><span class="octicon"></span><%= location %></li>
+          <li><span class="octicon"></span><a href="mailto: <%= email %>"><%= email %></a></li>
+          <li><span class="octicon"></span><a href="<%= blog %>"><%= blog %></a></li>
+          <li><span class="octicon"></span><%= created_at %></li>
+        </ul>
+      </div><!-- .contactInfo -->
+
+      <div class="followSection">
+        <div><h2><%= followers %></h2></div>
+        <div><h2></h2></div>
+        <div><h2><%= following %></h2></div>
+      </div><!-- .followSection -->
+    </script>
+  
+        
+
+
+
     <div class="outerContainer">
       <div class="innerContainer">
         <header>
           <a href=""><img src="" alt=""></a>
           <input type="text">
-          <nav>
+         <!--  <nav>
             <ul class="navOne">
               <li>Explore</li>
               <li>Gist</li>
@@ -27,7 +58,7 @@
               <li></li>
               <li></li>
             </ul>
-          </nav>
+          </nav> -->
         </header>
         <sidebar>
         <div class="imageHolder"></div><!-- .imageHolder -->
@@ -39,7 +70,9 @@
 
           </div><!-- .innerContainer -->
           </div><!-- .outerContainer -->
-          <script src="data.js"></script>
+
+
+          <script src="token.js"></script>
           <script src="main.js"></script>
         </body>
       </html>
