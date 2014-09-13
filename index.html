@@ -30,11 +30,11 @@
           <li><span class="octicon octicon-clock"></span></span><%= created_at %></li>
         </ul>
 
-      <div class="follow_section">
-        <h2><%= followers %></h2>
-        <h2><%= starred %></h2>
-        <h2><%= following %></h2>
-      </div><!-- .followSection -->
+      <ul class="follow_section">
+        <li><a href="https://github.com/<%= login %>/followers"><%= followers %><span>Follower</span></a></li>
+        <li><a href="https://github.com/stars/<%= login %>"><%= starred %><span>Starred</span></a></li>
+        <li><a href="https://github.com/<%= login %>/following"><%= following %><span>Following</span></a></li>
+      </ul>
     </script>
 
 

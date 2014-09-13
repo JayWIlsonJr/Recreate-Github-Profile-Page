@@ -1,6 +1,7 @@
 $dark-grey-border: #e5e5e5;
 $darker-grey-input: #ccc;
-$light-blue-link: #4183C4;
+$darkest-grey-font: #999;
+$light-blue-link: #4183c4;
 $lighter-black-font: #333;
 $light-grey-background: #f5f5f5;
 $medium-grey-font: #666;
@@ -75,22 +76,22 @@ input {
 
 .nav_two {
   margin-left: 80px;
+
+  li {
+    color: $lighter-black-font;
+    display: inline;
+    font-weight: bold;
+    list-style: none;
+    margin-right: 5px;
+    position: relative;
+    top: -4px;
+  }
 }
 
 .nav_one li {
   display: inline;
   list-style: none;
   margin-right: 12px;
-}
-
-.nav_two li {
-  color: $lighter-black-font;
-  display: inline;
-  font-weight: bold;
-  list-style: none;
-  margin-right: 5px;
-  position: relative;
-  top: -4px;
 }
 
 .header_avatar {
@@ -101,16 +102,6 @@ input {
   position: relative;
   top: 6px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .sidebar {
   width: 230px;
@@ -139,38 +130,58 @@ input {
   border-top: 1px solid $dark-grey-border;
   color: $lighter-black-font;
   list-style: none;
-  padding: 15px 0;
+  padding: 15px 0 2px;
+
+  a {
+    color: $light-blue-link;
+    text-decoration: none;
+  }
+
+  li {
+    font-size: 14px;
+    padding: 2px 0;
+  }
+
+  .octicon {
+    color: $darker-grey-input;
+    margin: 0 10px 2px 3px;
+  }
 }
 
-.contact_info .octicon {
-  color: $darker-grey-input;
-  margin: 0 10px 2px 3px;
-}
-
-.contact_info a {
+.follow_section {
+  border-bottom: 1px solid $dark-grey-border;
+  border-top: 1px solid $dark-grey-border;
   color: $light-blue-link;
-  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 15px 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    width: 30%;
+  }
+
+  a {
+    color: $light-blue-link;
+
+    &:hover {
+      span {
+        color: $light-blue-link;
+      }
+    }
+
+    text-decoration: none;
+  }
+
+  span {
+    color: $darkest-grey-font;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+  }
 }
-
-.contact_info li {
-  font-size: 14px;
-  padding: 2px 0;
-}
-
-.follow_section h2 {
-  display: inline;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 .main_inner_container {
   margin: 20px auto;
@@ -181,5 +192,3 @@ input {
   text-align: center;
   width: 16px;
 }
-
-
