@@ -1,8 +1,9 @@
-$dark-grey: #e5e5e5;
-$darker-grey: #ccc;
-$lighter-black: #333;
-$light-grey: #f5f5f5;
-$medium-grey: #666;
+$dark-grey-border: #e5e5e5;
+$darker-grey-input: #ccc;
+$light-blue-link: #4183C4;
+$lighter-black-font: #333;
+$light-grey-background: #f5f5f5;
+$medium-grey-font: #666;
 
 $font-size: 100%;
 $font-family-main: Helvetica, arial, freesans, clean, sans-serif;
@@ -31,14 +32,14 @@ $font-family-main: Helvetica, arial, freesans, clean, sans-serif;
 }
 
 header {
-  background: $light-grey;
-  border-bottom: 1px solid $dark-grey;
+  background: $light-grey-background;
+  border-bottom: 1px solid $dark-grey-border;
   height: 49px;
   min-width: 1000px;
 }
 
 .octicon-mark-github {
-  color: $lighter-black;
+  color: $lighter-black-font;
   display: inline;
   font-size: 28px;
   height: 28px;
@@ -47,7 +48,7 @@ header {
 }
 
 input {
-  border: 1px solid $darker-grey;
+  border: 1px solid $darker-grey-input;
   border-radius: 3px;
   display: inline;
   font-size: 12px;
@@ -61,7 +62,7 @@ input {
 
 .nav_one,
 .nav_two {
-  color: $lighter-black;
+  color: $lighter-black-font;
   display: inline-block;
   font-size: 13px;
   font-weight: bold;
@@ -83,7 +84,7 @@ input {
 }
 
 .nav_two li {
-  color: $lighter-black;
+  color: $lighter-black-font;
   display: inline;
   font-weight: bold;
   list-style: none;
@@ -101,6 +102,25 @@ input {
   top: 6px;
 }
 
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+  width: 230px;
+}
+
+.sidebar_avatar {
+  height: 230px;
+  width: 230px;
+}
+
 .name {
   display: block;
   font-size: 26px;
@@ -109,11 +129,40 @@ input {
 }
 
 .login_name {
-  color: $medium-grey;
+  color: $medium-grey-font;
   display: block;
   font-size: 20px;
   font-weight: 300;
 }
+
+.contact_info {
+  border-top: 1px solid $dark-grey-border;
+  color: $lighter-black-font;
+  list-style: none;
+  padding: 15px 0;
+}
+
+.contact_info .octicon {
+  color: $darker-grey-input;
+  margin: 0 10px 2px 3px;
+}
+
+.contact_info a {
+  color: $light-blue-link;
+  text-decoration: none;
+}
+
+.contact_info li {
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+.follow_section h2 {
+  display: inline;
+}
+
+
+
 
 
 
@@ -133,7 +182,4 @@ input {
   width: 16px;
 }
 
-.sidebar_avatar {
-  height: 230px;
-  width: 230px;
-}
+

@@ -23,17 +23,17 @@
         <span class ="login_name"><%= login %></span>
       </div><!-- .usernameTextArea -->
 
-        <ul class="contactInfo">
-          <li><span class="octicon"></span><%= location %></li>
-          <li><span class="octicon"></span><a href="mailto: <%= email %>"><%= email %></a></li>
-          <li><span class="octicon"></span><a href="<%= blog %>"><%= blog %></a></li>
-          <li><span class="octicon"></span><%= created_at %></li>
+        <ul class="contact_info">
+          <li><span class="octicon octicon-location"></span><%= location %></li>
+          <li><span class="octicon octicon-mail"></span><a href="mailto: <%= email %>"><%= email %></a></li>
+          <li><span class="octicon octicon-link"></span><a href="<%= blog %>"><%= blog %></a></li>
+          <li><span class="octicon octicon-clock"></span></span><%= created_at %></li>
         </ul>
 
-      <div class="followSection">
-        <div><h2><%= followers %></h2></div>
-        <div><h2></h2></div>
-        <div><h2><%= following %></h2></div>
+      <div class="follow_section">
+        <h2><%= followers %></h2>
+        <h2><%= starred %></h2>
+        <h2><%= following %></h2>
       </div><!-- .followSection -->
     </script>
 
@@ -67,10 +67,10 @@
           </div><!-- .header_inner_container -->
         </header>
       <div class="main_inner_container">
-        <sidebar>
+        <section class="sidebar">
         <div class="imageHolder"></div><!-- .imageHolder -->
         <div class="infoArea"></div><!-- .infoArea -->
-        </sidebar>
+        </section>
         <div class="mainArea">
 
           </div><!-- .mainArea -->

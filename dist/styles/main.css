@@ -79,6 +79,13 @@ input {
   position: relative;
   top: 6px; }
 
+.sidebar {
+  width: 230px; }
+
+.sidebar_avatar {
+  height: 230px;
+  width: 230px; }
+
 .name {
   display: block;
   font-size: 26px;
@@ -91,6 +98,27 @@ input {
   font-size: 20px;
   font-weight: 300; }
 
+.contact_info {
+  border-top: 1px solid #e5e5e5;
+  color: #333;
+  list-style: none;
+  padding: 15px 0; }
+
+.contact_info .octicon {
+  color: #ccc;
+  margin: 0 10px 2px 3px; }
+
+.contact_info a {
+  color: #4183C4;
+  text-decoration: none; }
+
+.contact_info li {
+  font-size: 14px;
+  padding: 2px 0; }
+
+.follow_section h2 {
+  display: inline; }
+
 .main_inner_container {
   margin: 20px auto;
   width: 980px; }
@@ -98,7 +126,3 @@ input {
 .inner_container .octicon {
   text-align: center;
   width: 16px; }
-
-.sidebar_avatar {
-  height: 230px;
-  width: 230px; }
