@@ -8,4 +8,5 @@ function renderTemplate(templateId, model, container) {
 
 $.getJSON('https://api.github.com/users/jaywilsonjr').done(function(user) {
   renderTemplate('#sidebarImageSection', user, '.imageHolder');
+  renderTemplate('#header', user, '.nav_two_avatar');
 });
