@@ -16,6 +16,11 @@ $font-family-main: Helvetica, arial, freesans, clean, sans-serif;
   box-sizing: border-box;
 }
 
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
 .body {
   font-family: $font-family-main;
 }
@@ -219,7 +224,7 @@ input {
     border: 1px solid #d5d5d5;
     border-radius: 3px;
     height: 26px;
-    padding: 0 6px;
+    padding: 0 10px;
     position: absolute;
     right: 0;
     top: 0;
@@ -230,8 +235,17 @@ input {
       font-weight: bold;
     }
 
+    span {
+      font-size: 13px;
+      font-weight: bold;
+      padding-left: 2px;
+    }
+
     &:focus {
+      border-color: #51a7e8;
+      box-shadow: 0 0 5px rgba(81, 167, 232, .5);
       outline: none;
+      text-decoration: none;
     }
 
     &:hover {
@@ -273,7 +287,15 @@ input {
 
 }
 
+.tabs_footer {
+  left: 4px;
+  position: relative;
+  top: 20px;
 
+  input {
+    padding: 7px 8px;
+  }
+}
 
 
 
