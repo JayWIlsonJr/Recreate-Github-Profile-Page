@@ -288,16 +288,26 @@ input {
 }
 
 .tabs_footer {
-  left: 4px;
+  border-bottom: 1px solid $dark-grey-border;
+  padding-bottom: 5px;
   position: relative;
-  top: 20px;
-
-  input {
-    padding: 7px 8px;
-  }
+  top: 20px; 
 }
 
-
+.filter_input {
+  background-color: $white;
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: 1px solid $darker-grey-input;
+  border-radius: 3px;
+  color: $lighter-black-font;
+  font-size: 13px;
+  margin-left: 4px;
+  min-height: 34px;
+  padding: 7px 8px;
+  vertical-align: middle;
+  width: 260px;
+  }
 
 
 

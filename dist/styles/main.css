@@ -205,11 +205,24 @@ input {
       color: #333; }
 
 .tabs_footer {
-  left: 4px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 5px;
   position: relative;
   top: 20px; }
-  .tabs_footer input {
-    padding: 7px 8px; }
+
+.filter_input {
+  background-color: #fff;
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #333;
+  font-size: 13px;
+  margin-left: 4px;
+  min-height: 34px;
+  padding: 7px 8px;
+  vertical-align: middle;
+  width: 260px; }
 
 .main_inner_container {
   margin: 20px auto;
