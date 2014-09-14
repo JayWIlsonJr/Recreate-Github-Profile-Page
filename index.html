@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="dist/styles/main.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.js"></script>
   </head>
   <body>
     
@@ -67,13 +68,25 @@
           </div><!-- .header_inner_container -->
         </header>
       <div class="main_inner_container">
+        
         <section class="sidebar">
-        <div class="imageHolder"></div><!-- .imageHolder -->
-        <div class="infoArea"></div><!-- .infoArea -->
+          <div class="imageHolder"></div><!-- .imageHolder -->
+          <div class="org_area">
+            <h3>Organizations</h3>
+          </div><!-- .infoArea -->
         </section>
-        <div class="mainArea">
 
-          </div><!-- .mainArea -->
+
+        <div class="main_area">
+          <div class="tabs">
+            <ul>
+              <li><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+              <li class="active_tab"><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+              <li><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
+            </ul>
+            <button class="button"><a href="https://github.com/account"><span class="octicon octicon-pencil">Edit profile</span></a></button>
+          </div><!-- .tabs -->
+        </div><!-- .mainArea -->
 
           </div><!-- .innerContainer -->
           </div><!-- .outerContainer -->

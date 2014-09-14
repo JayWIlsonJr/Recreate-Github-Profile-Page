@@ -79,7 +79,8 @@ input {
   top: 6px; }
 
 .sidebar {
-  width: 230px; }
+  width: 230px;
+  display: inline-block; }
 
 .sidebar_avatar {
   height: 230px;
@@ -135,8 +136,66 @@ input {
     font-size: 11px;
     font-weight: normal; }
 
+.org_area {
+  color: #333;
+  font-size: 16px; }
+
+.main_area {
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  top: 0;
+  width: 730px; }
+
+.tabs {
+  border-bottom: 1px solid #e5e5e5; }
+  .tabs a {
+    color: #666;
+    text-decoration: none; }
+  .tabs .button {
+    background-image: linear-gradient(#fcfcfc, #eee);
+    background-repeat: repeat-x;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    height: 26px;
+    padding: 0 6px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .tabs .button a {
+      color: #333;
+      font-size: 13px;
+      font-weight: bold; }
+    .tabs .button:focus {
+      outline: none; }
+    .tabs .button:hover {
+      background-color: #ddd;
+      background-image: linear-gradient(#eee, #ddd);
+      background-repeat: repeat-x;
+      border-color: #ccc; }
+  .tabs li {
+    color: #666;
+    display: inline;
+    font-size: 14px;
+    left: -39px;
+    padding: 10px 12px 8px;
+    position: relative;
+    top: -6px; }
+  .tabs span {
+    margin-right: 4px; }
+  .tabs ul {
+    margin-bottom: 1px; }
+  .tabs .active_tab {
+    border: 1px solid #e5e5e5;
+    border-bottom: 1px solid #fff;
+    border-radius: 3px 3px 0 0;
+    color: #333; }
+    .tabs .active_tab a {
+      color: #333; }
+
 .main_inner_container {
   margin: 20px auto;
+  position: relative;
   width: 980px; }
 
 .inner_container .octicon {
