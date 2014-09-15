@@ -206,8 +206,9 @@ input {
 .main_area {
   display: inline-block;
   margin-left: 20px;
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -572px;
+  left: 230px;
   width: 730px;
 }
 
@@ -408,7 +409,7 @@ input {
     color: $light-blue-link;
     font-size: 20px;
     line-height: 1.2;
-    text-decoration:  none;
+    text-decoration: none;
   }
 
   .rt_side {
@@ -437,7 +438,12 @@ input {
   }
 }
 
-
+.footer_area {
+  border-top: 1px solid $dark-grey-border;
+  bottom: 0;
+  position: relative;
+  outline: 1px blue dashed;
+}
 
 
 
