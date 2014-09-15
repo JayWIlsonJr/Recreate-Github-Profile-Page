@@ -5,6 +5,7 @@ $light-blue-link: #4183c4;
 $lighter-black-font: #333;
 $light-grey-background: #f5f5f5;
 $medium-grey-font: #666;
+$mediumer-grey-font: #888;
 $white: #fff;
 
 $font-size: 100%;
@@ -387,6 +388,54 @@ input {
   }
 }
 
+.repos_area {
+  position: relative;
+  top: 40px;
+}
+
+.repos_container {
+  border-bottom: 1px solid $dark-grey-border;
+  //margin-bottom: 15px;
+  padding: 14px 0;
+
+  h3 {
+    display: inline-block;
+    line-height: 1.2;
+    margin-top: 8px;
+  }
+
+  a {
+    color: $light-blue-link;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration:  none;
+  }
+
+  .rt_side {
+    color: $mediumer-grey-font;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+
+    a {
+      color: $mediumer-grey-font;
+      font-size: 12px;
+      font-weight: bold;
+
+      &:hover {
+        color: $light-blue-link;
+      }
+    }
+  }
+
+  .updated_at {
+    color: $mediumer-grey-font;
+    display: block;
+    font-size: 13px;
+    margin: -8px 0 12px;;
+  }
+}
 
 
 

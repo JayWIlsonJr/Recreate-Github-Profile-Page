@@ -285,6 +285,40 @@ input {
     font-weight: bold;
     margin-right: 3px; }
 
+.repos_area {
+  position: relative;
+  top: 40px; }
+
+.repos_container {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 14px 0; }
+  .repos_container h3 {
+    display: inline-block;
+    line-height: 1.2;
+    margin-top: 8px; }
+  .repos_container a {
+    color: #4183c4;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none; }
+  .repos_container .rt_side {
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 0; }
+    .repos_container .rt_side a {
+      color: #888;
+      font-size: 12px;
+      font-weight: bold; }
+      .repos_container .rt_side a:hover {
+        color: #4183c4; }
+  .repos_container .updated_at {
+    color: #888;
+    display: block;
+    font-size: 13px;
+    margin: -8px 0 12px; }
+
 .main_inner_container {
   margin: 20px auto;
   position: relative;

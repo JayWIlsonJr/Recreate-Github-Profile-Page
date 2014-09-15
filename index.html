@@ -11,102 +11,91 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.js"></script>
   </head>
   <body>
-
     <script type="text/template" id="header">
-      <img class="header_avatar avatar" src="<%= avatar_url %>"><span class ="header_login_name"><%= login %></span>
+    <img class="header_avatar avatar" src="<%= avatar_url %>"><span class ="header_login_name"><%= login %></span>
     </script>
-
     <script type="text/template" id="sidebarImageSection">
-      <a href="<%= html_url %>"><img class="sidebar_avatar avatar" src="<%= avatar_url %>"></a>
-
-      <div class="username_area">
-        <span class ="name"><%= name %></span>
-        <span class ="login_name"><%= login %></span>
+    <a href="<%= html_url %>"><img class="sidebar_avatar avatar" src="<%= avatar_url %>"></a>
+    <div class="username_area">
+      <span class ="name"><%= name %></span>
+      <span class ="login_name"><%= login %></span>
       </div><!-- .usernameTextArea -->
-
-        <ul class="contact_info">
-          <li><span class="octicon octicon-location"></span><%= location %></li>
-          <li><span class="octicon octicon-mail"></span><a href="mailto: <%= email %>"><%= email %></a></li>
-          <li><span class="octicon octicon-link"></span><a href="<%= blog %>"><%= blog %></a></li>
-          <li><span class="octicon octicon-clock"></span></span><%= created_at %></li>
-        </ul>
-
+      <ul class="contact_info">
+        <li><span class="octicon octicon-location"></span><%= location %></li>
+        <li><span class="octicon octicon-mail"></span><a href="mailto: <%= email %>"><%= email %></a></li>
+        <li><span class="octicon octicon-link"></span><a href="<%= blog %>"><%= blog %></a></li>
+        <li><span class="octicon octicon-clock"></span></span><%= created_at %></li>
+      </ul>
       <ul class="follow_section">
         <li><a href="https://github.com/<%= login %>/followers"><%= followers %><span>Follower</span></a></li>
         <li><a href="https://github.com/stars/<%= login %>"><%= starred %><span>Starred</span></a></li>
         <li><a href="https://github.com/<%= login %>/following"><%= following %><span>Following</span></a></li>
       </ul>
-    </script>
+      </script>
 
+      <script type="text/template" id="repos">
+          <div class="repos_container"><h3><a href="<%= html_url %>"><%= name %></a></h3> 
+          <span class="rt_side"><%= language %> <a href="<%= html_url %>/stargazers"><span class="octicon octicon-star"></span><%= stargazers_count %></a> <a href="<%= html_url %>/network"><span class="octicon octicon-git-branch"></span><%= forks_count %></a></span><br><span class="updated_at"><%= updated_at %></span></span>
+          </div><!-- .repos_container -->
+      </script>
 
-
-
-    <div class="outerContainer">
-
+      <div class="outerContainer">
         <header>
           <div class="header_inner_container">
             <span class="octicon octicon-mark-github"></span>
             <input type="text" placeholder="Search GitHub">
-
-
-
-              <ul class="nav_one">
-                <li>Explore</li>
-                <li>Gist</li>
-                <li>Blog</li>
-                <li>Help</li>
-              </ul>
-
-              <ul class="nav_two">
-                <li class="nav_two_avatar"></li>
-                <li><span class="octicon octicon-plus"></span></li>
-                <li><span class="octicon octicon-inbox"></span></li>
-                <li><span class="octicon octicon-gear"></span></li>
-                <li><span class="octicon octicon-sign-out"></span></li>
-              </ul>
-
-          </div><!-- .header_inner_container -->
-        </header>
-      <div class="main_inner_container">
-
-        <section class="sidebar">
-          <div class="imageHolder"></div><!-- .imageHolder -->
-          <div class="org_area">
-            <h3>Organizations</h3>
-          </div><!-- .infoArea -->
-        </section>
-
-
-        <div class="main_area">
-          <div class="tabs">
-            <ul>
-              <li><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
-              <li class="active_tab"><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
-              <li><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
+            <ul class="nav_one">
+              <li>Explore</li>
+              <li>Gist</li>
+              <li>Blog</li>
+              <li>Help</li>
             </ul>
-            <button class="button"><a href="https://github.com/account"><span class="octicon octicon-pencil">Edit profile</span></a></button>
-          </div><!-- .tabs -->
-
-          <div class="tabs_footer">
-            <input type="text" class="filter_input" placeholder="Find a repository...">
-            <input type="submit" value="Search" class="submit_button">
-            <ul class="filter_links">
-              <li class="active_link"><a href="#">All</a></li>
-              <li><a href="#">Pubic</a></li>
-              <li><a href="#">Private</a></li>
-              <li><a href="#">Sources</a></li>
-              <li><a href="#">Forks</a></li>
-              <li><a href="#">Mirrors</a></li>
+            <ul class="nav_two">
+              <li class="nav_two_avatar"></li>
+              <li><span class="octicon octicon-plus"></span></li>
+              <li><span class="octicon octicon-inbox"></span></li>
+              <li><span class="octicon octicon-gear"></span></li>
+              <li><span class="octicon octicon-sign-out"></span></li>
             </ul>
-            <button class="new_repo_btn"><span class="octicon octicon-repo"></span>New</button>
-          </div><!-- .tabs_footer -->
-        </div><!-- .mainArea -->
+            </div><!-- .header_inner_container -->
+          </header>
+          <div class="main_inner_container">
+            <section class="sidebar">
+              <div class="imageHolder"></div><!-- .imageHolder -->
+              <div class="org_area">
+                <h3>Organizations</h3>
+                </div><!-- .infoArea -->
+              </section>
+              <div class="main_area">
+                <div class="tabs">
+                  <ul>
+                    <li><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+                    <li class="active_tab"><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+                    <li><a href="#"><span class="octicon octicon-rss"></span>Public activity</a></li>
+                  </ul>
+                  <button class="button"><a href="https://github.com/account"><span class="octicon octicon-pencil">Edit profile</span></a></button>
+                  </div><!-- .tabs -->
+                  <div class="tabs_footer">
+                    <input type="text" class="filter_input" placeholder="Find a repository...">
+                    <input type="submit" value="Search" class="submit_button">
+                    <ul class="filter_links">
+                      <li class="active_link"><a href="#">All</a></li>
+                      <li><a href="#">Pubic</a></li>
+                      <li><a href="#">Private</a></li>
+                      <li><a href="#">Sources</a></li>
+                      <li><a href="#">Forks</a></li>
+                      <li><a href="#">Mirrors</a></li>
+                    </ul>
+                    <button class="new_repo_btn"><span class="octicon octicon-repo"></span>New</button>
+                    </div><!-- .tabs_footer -->
 
-          </div><!-- .innerContainer -->
-          </div><!-- .outerContainer -->
 
+                    <div class="repos_area"></div><!-- .repos_area -->
 
-          <script src="token.js"></script>
-          <script src="main.js"></script>
-        </body>
-      </html>
+                    </div><!-- .mainArea -->
+                    </div><!-- .innerContainer -->
+                    </div><!-- .outerContainer -->
+                    <script src="token.js"></script>
+                    <script src="main.js"></script>
+                  </body>
+                </html>
