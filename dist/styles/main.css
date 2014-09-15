@@ -83,8 +83,8 @@ input {
   top: 6px; }
 
 .sidebar {
-  width: 230px;
-  display: inline-block; }
+  display: inline-block;
+  width: 230px; }
 
 .sidebar_avatar {
   height: 230px;
@@ -223,6 +223,67 @@ input {
   padding: 7px 8px;
   vertical-align: middle;
   width: 260px; }
+
+.submit_button {
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  background-repeat: repeat-x;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  color: #333;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 69px; }
+
+.filter_links {
+  display: inline;
+  font-size: 14px;
+  left: -24px;
+  position: relative;
+  top: -4px; }
+  .filter_links li {
+    display: inline;
+    list-style: none;
+    margin-left: 8px; }
+  .filter_links a {
+    color: #4183c4;
+    text-decoration: none; }
+    .filter_links a:hover {
+      text-decoration: underline; }
+  .filter_links .active_link a {
+    color: #333;
+    font-weight: bold; }
+    .filter_links .active_link a:hover {
+      text-decoration: underline; }
+
+.new_repo_btn {
+  background-color: #60b044;
+  background-image: linear-gradient(#8add6d, #60b044);
+  background-repeat: repeat-x;
+  border: 1px solid #d5d5d5;
+  border-color: #5ca941;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 7px 12px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  top: -4px;
+  vertical-align: middle; }
+  .new_repo_btn span {
+    font-weight: bold;
+    margin-right: 3px; }
 
 .main_inner_container {
   margin: 20px auto;
